@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AIR Hub — All Apps</title>
+  <meta name="description" content="Home page for all AIR apps on Vercel and Netlify" />
+  <style>
+    :root {
+      --bg: #0b0f14;
+      --card: #141b24;
+      --card-hover: #1a2430;
+      --text: #e8eef6;
+      --muted: #8b9bb0;
+      --accent: #5b9fd4;
+      --accent2: #6bcf9a;
+      --border: #243041;
+      --vercel: #ffffff;
+      --netlify: #00c7b7;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      background: radial-gradient(1200px 600px at 10% -10%, #132033 0%, var(--bg) 55%);
+      color: var(--text);
+      min-height: 100vh;
+      line-height: 1.5;
+    }
+    .wrap { max-width: 960px; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+    header { text-align: center; margin-bottom: 2.5rem; }
+    .logo {
+      display: inline-flex; align-items: center; gap: 0.6rem;
+      font-size: 1.75rem; font-weight: 800; letter-spacing: -0.03em;
+    }
+    .logo span {
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      -webkit-background-clip: text; background-clip: text; color: transparent;
+    }
+    .tagline { color: var(--muted); margin-top: 0.5rem; font-size: 1.05rem; }
+    section { margin-bottom: 2.25rem; }
+    h2 {
+      font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.12em;
+      color: var(--muted); margin-bottom: 0.9rem; display: flex; align-items: center; gap: 0.5rem;
+    }
+    h2 .dot {
+      width: 8px; height: 8px; border-radius: 50%; display: inline-block;
+    }
+    h2 .dot.vercel { background: var(--vercel); }
+    h2 .dot.netlify { background: var(--netlify); }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1rem;
+    }
+    a.card {
+      display: block; text-decoration: none; color: inherit;
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 14px; padding: 1.15rem 1.2rem;
+      transition: background 0.15s, border-color 0.15s, transform 0.15s;
+    }
+    a.card:hover {
+      background: var(--card-hover);
+      border-color: var(--accent);
+      transform: translateY(-2px);
+    }
+    a.card h3 { font-size: 1.05rem; margin-bottom: 0.35rem; }
+    a.card p { color: var(--muted); font-size: 0.9rem; }
+    a.card .url {
+      margin-top: 0.65rem; font-size: 0.75rem; color: var(--accent);
+      word-break: break-all;
+    }
+    .empty {
+      border: 1px dashed var(--border); border-radius: 14px;
+      padding: 1.25rem; color: var(--muted); font-size: 0.95rem;
+    }
+    footer {
+      text-align: center; color: var(--muted); font-size: 0.85rem;
+      margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--border);
+    }
+    footer a { color: var(--accent); text-decoration: none; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo"><span>AIR</span> Hub</div>
+      <p class="tagline">All your apps in one place — Vercel &amp; Netlify</p>
+    </header>
+
+    <section>
+      <h2><span class="dot vercel"></span> Vercel</h2>
+      <div class="grid">
+        <a class="card" href="https://quietchat.vercel.app" target="_blank" rel="noopener">
+          <h3>Quiet Chat</h3>
+          <p>Chat app</p>
+          <div class="url">quietchat.vercel.app</div>
+        </a>
+        <a class="card" href="https://air-dictionary.vercel.app" target="_blank" rel="noopener">
+          <h3>AIR Dictionary</h3>
+          <p>Dictionary with synonyms &amp; antonyms</p>
+          <div class="url">air-dictionary.vercel.app</div>
+        </a>
+        <a class="card" href="https://air-maps.vercel.app" target="_blank" rel="noopener">
+          <h3>AIR Maps</h3>
+          <p>Maps project</p>
+          <div class="url">air-maps.vercel.app</div>
+        </a>
+        <a class="card" href="https://air-docs.vercel.app" target="_blank" rel="noopener">
+          <h3>AIR Docs</h3>
+          <p>Documents</p>
+          <div class="url">air-docs.vercel.app</div>
+        </a>
+        <a class="card" href="https://air-docs-se.vercel.app" target="_blank" rel="noopener">
+          <h3>AIR Docs SE</h3>
+          <p>Text editor with export</p>
+          <div class="url">air-docs-se.vercel.app</div>
+        </a>
+        <a class="card" href="https://air-player.vercel.app" target="_blank" rel="noopener">
+          <h3>AIR Player</h3>
+          <p>Local media viewer</p>
+          <div class="url">air-player.vercel.app</div>
+        </a>
+        <a class="card" href="https://air-retro-os.vercel.app" target="_blank" rel="noopener">
+          <h3>AIR Retro OS</h3>
+          <p>Retro-style OS UI</p>
+          <div class="url">air-retro-os.vercel.app</div>
+        </a>
+        <a class="card" href="https://customizable-timer.vercel.app" target="_blank" rel="noopener">
+          <h3>Customizable Timer</h3>
+          <p>Countdown / stopwatch</p>
+          <div class="url">customizable-timer.vercel.app</div>
+        </a>
+      </div>
+    </section>
+
+    <section>
+      <h2><span class="dot netlify"></span> Netlify</h2>
+      <div class="empty" id="netlify-section">
+        No Netlify sites linked yet. Send me your Netlify URLs (e.g. <code>yoursite.netlify.app</code>) and I’ll add them here.
+      </div>
+    </section>
+
+    <footer>
+      <p>AIR Inc · <a href="https://github.com/betabeeswax/air-home" target="_blank" rel="noopener">Source on GitHub</a></p>
+    </footer>
+  </div>
+</body>
+</html>
