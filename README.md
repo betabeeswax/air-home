@@ -1,10 +1,11 @@
 # AIR Hub
 
-Home page linking all AIR apps on **Vercel** (and Netlify when added).
+Home page linking all AIR apps on **Vercel** and **Netlify**.
 
 ## Live
 
-After deploy: check your Vercel dashboard for `air-home`.
+Repo: https://github.com/betabeeswax/air-home  
+Import this repo on Vercel to host the hub (e.g. `air-home.vercel.app`).
 
 ## Sites included
 
@@ -19,4 +20,5 @@ After deploy: check your Vercel dashboard for `air-home`.
 - [Customizable Timer](https://customizable-timer.vercel.app)
 
 ### Netlify
-Add URLs when you have them.
+- [AIR Dictionary](https://air-dictionary.netlify.app)
+- [AIR Timer](https://air-timer.netlify.app/)

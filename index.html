@@ -63,16 +63,14 @@
       border-color: var(--accent);
       transform: translateY(-2px);
     }
+    a.card.netlify-card:hover { border-color: var(--netlify); }
     a.card h3 { font-size: 1.05rem; margin-bottom: 0.35rem; }
     a.card p { color: var(--muted); font-size: 0.9rem; }
     a.card .url {
       margin-top: 0.65rem; font-size: 0.75rem; color: var(--accent);
       word-break: break-all;
     }
-    .empty {
-      border: 1px dashed var(--border); border-radius: 14px;
-      padding: 1.25rem; color: var(--muted); font-size: 0.95rem;
-    }
+    a.card.netlify-card .url { color: var(--netlify); }
     footer {
       text-align: center; color: var(--muted); font-size: 0.85rem;
       margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--border);
@@ -135,8 +133,17 @@
 
     <section>
       <h2><span class="dot netlify"></span> Netlify</h2>
-      <div class="empty" id="netlify-section">
-        No Netlify sites linked yet. Send me your Netlify URLs (e.g. <code>yoursite.netlify.app</code>) and I’ll add them here.
+      <div class="grid">
+        <a class="card netlify-card" href="https://air-dictionary.netlify.app" target="_blank" rel="noopener">
+          <h3>AIR Dictionary</h3>
+          <p>Dictionary (Netlify host)</p>
+          <div class="url">air-dictionary.netlify.app</div>
+        </a>
+        <a class="card netlify-card" href="https://air-timer.netlify.app/" target="_blank" rel="noopener">
+          <h3>AIR Timer</h3>
+          <p>Timer app</p>
+          <div class="url">air-timer.netlify.app</div>
+        </a>
       </div>
     </section>
 
