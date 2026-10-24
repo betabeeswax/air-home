@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>AIR Hub — All Apps</title>
   <meta name="description" content="Home page for all AIR apps on Vercel and Netlify" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/favicon.svg" />
   <style>
     :root {
       --bg: #0b0f14;
@@ -29,14 +31,19 @@
     .wrap { max-width: 960px; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
     header { text-align: center; margin-bottom: 2.5rem; }
     .logo {
-      display: inline-flex; align-items: center; gap: 0.6rem;
+      display: inline-flex; align-items: center; gap: 0.75rem;
       font-size: 1.75rem; font-weight: 800; letter-spacing: -0.03em;
+    }
+    .logo-mark {
+      width: 48px; height: 48px; flex-shrink: 0;
+      border-radius: 12px;
+      box-shadow: 0 0 0 1px var(--border), 0 8px 24px rgba(0,0,0,0.35);
     }
     .logo span {
       background: linear-gradient(135deg, var(--accent), var(--accent2));
       -webkit-background-clip: text; background-clip: text; color: transparent;
     }
-    .tagline { color: var(--muted); margin-top: 0.5rem; font-size: 1.05rem; }
+    .tagline { color: var(--muted); margin-top: 0.65rem; font-size: 1.05rem; }
     section { margin-bottom: 2.25rem; }
     h2 {
       font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.12em;
@@ -81,7 +88,21 @@
 <body>
   <div class="wrap">
     <header>
-      <div class="logo"><span>AIR</span> Hub</div>
+      <div class="logo">
+        <svg class="logo-mark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-hidden="true">
+          <defs>
+            <linearGradient id="airg" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#5b9fd4"/>
+              <stop offset="100%" stop-color="#6bcf9a"/>
+            </linearGradient>
+          </defs>
+          <rect width="64" height="64" rx="16" fill="#141b24"/>
+          <path d="M18 46 L32 14 L46 46 Z" fill="none" stroke="url(#airg)" stroke-width="4" stroke-linejoin="round"/>
+          <path d="M24 36 H40" stroke="url(#airg)" stroke-width="3.5" stroke-linecap="round"/>
+          <circle cx="32" cy="22" r="3" fill="#6bcf9a"/>
+        </svg>
+        <span>AIR</span> Hub
+      </div>
       <p class="tagline">All your apps in one place — Vercel &amp; Netlify</p>
     </header>
 
