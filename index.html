@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>AIR Hub — All Apps</title>
-  <meta name="description" content="Home page for all AIR apps on Vercel and Netlify" />
+  <meta name="description" content="Andrew Brake · AIR Inc — home for all AIR apps on Vercel and Netlify" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/favicon.svg" />
   <style>
@@ -29,7 +29,7 @@
       line-height: 1.5;
     }
     .wrap { max-width: 960px; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
-    header { text-align: center; margin-bottom: 2.5rem; }
+    header { text-align: center; margin-bottom: 1.75rem; }
     .logo {
       display: inline-flex; align-items: center; gap: 0.75rem;
       font-size: 1.75rem; font-weight: 800; letter-spacing: -0.03em;
@@ -44,6 +44,48 @@
       -webkit-background-clip: text; background-clip: text; color: transparent;
     }
     .tagline { color: var(--muted); margin-top: 0.65rem; font-size: 1.05rem; }
+
+    .profile {
+      display: flex; flex-wrap: wrap; gap: 1.25rem; align-items: center;
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 16px; padding: 1.25rem 1.4rem; margin-bottom: 2.25rem;
+    }
+    .profile-avatar {
+      width: 88px; height: 88px; border-radius: 50%;
+      border: 2px solid var(--border); object-fit: cover; flex-shrink: 0;
+      background: #1a2332;
+    }
+    .profile-body { flex: 1; min-width: 220px; }
+    .profile-body h1 {
+      font-size: 1.35rem; font-weight: 700; letter-spacing: -0.02em;
+      margin-bottom: 0.15rem;
+    }
+    .profile-handle {
+      color: var(--accent); font-size: 0.95rem; margin-bottom: 0.45rem;
+    }
+    .profile-bio {
+      color: var(--muted); font-size: 0.95rem; margin-bottom: 0.75rem;
+      max-width: 42rem;
+    }
+    .profile-meta {
+      display: flex; flex-wrap: wrap; gap: 0.5rem 1rem;
+      font-size: 0.85rem; color: var(--muted); margin-bottom: 0.85rem;
+    }
+    .profile-meta strong { color: var(--text); font-weight: 600; }
+    .profile-links {
+      display: flex; flex-wrap: wrap; gap: 0.5rem;
+    }
+    .profile-links a {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      text-decoration: none; color: var(--text);
+      background: #0f1620; border: 1px solid var(--border);
+      border-radius: 999px; padding: 0.35rem 0.85rem; font-size: 0.82rem;
+      transition: border-color 0.15s, background 0.15s;
+    }
+    .profile-links a:hover {
+      border-color: var(--accent); background: var(--card-hover);
+    }
+
     section { margin-bottom: 2.25rem; }
     h2 {
       font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.12em;
@@ -106,6 +148,35 @@
       <p class="tagline">All your apps in one place — Vercel &amp; Netlify</p>
     </header>
 
+    <section class="profile" aria-label="Profile">
+      <img
+        class="profile-avatar"
+        src="https://avatars.githubusercontent.com/u/225723930?v=4"
+        alt="Andrew Brake / betabeeswax"
+        width="88"
+        height="88"
+      />
+      <div class="profile-body">
+        <h1>Andrew Brake</h1>
+        <div class="profile-handle">@betabeeswax · AIR Inc</div>
+        <p class="profile-bio">
+          Builder of web tools, Minecraft mods, and small apps under <strong>AIR Inc</strong>.
+          Dictionary, docs, maps, media player, timer, chat, and more — hosted on Vercel &amp; Netlify.
+        </p>
+        <div class="profile-meta">
+          <span><strong>16</strong> public repos</span>
+          <span>GitHub since <strong>2025</strong></span>
+          <span>Mods on <strong>Modrinth</strong></span>
+        </div>
+        <div class="profile-links">
+          <a href="https://github.com/betabeeswax" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://modrinth.com/user/betabeeswax" target="_blank" rel="noopener">Modrinth</a>
+          <a href="https://air-inc-home.vercel.app" target="_blank" rel="noopener">AIR Hub</a>
+          <a href="https://github.com/betabeeswax/air-home" target="_blank" rel="noopener">Hub source</a>
+        </div>
+      </div>
+    </section>
+
     <section>
       <h2><span class="dot vercel"></span> Vercel</h2>
       <div class="grid">
@@ -164,7 +235,7 @@
     </section>
 
     <footer>
-      <p>AIR Inc · <a href="https://github.com/betabeeswax/air-home" target="_blank" rel="noopener">Source on GitHub</a></p>
+      <p>AIR Inc · Andrew Brake · <a href="https://github.com/betabeeswax/air-home" target="_blank" rel="noopener">Source on GitHub</a></p>
     </footer>
   </div>
 </body>
